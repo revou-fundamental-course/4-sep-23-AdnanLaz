@@ -1,0 +1,145 @@
+body{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 237, 121);
+}
+
+button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#tombol_luas, #tombol_keliling{
+    background-color: #3498db; 
+    color: #fff; 
+    font-size: 16px; 
+    padding: 10px 135px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #62c0ff;
+}
+
+
+.container {
+    position: relative;
+    padding: auto;
+    display: flex;
+    min-height: 24vh;
+    
+    
+}
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border : 2px solid #7acaff;
+    display: none;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border : 2px solid #7acaff;
+    display: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: #0099ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#unik1{
+    font-size: 40;
+    font-family: "Brush Script MT", cursive, sans-serif;
+    padding: 0px 6px;
+}
+
+#unik2{
+    font-size: 25;
+    font-family:"Monaco", monospace;
+}
+
+.penjelasan{
+    text-align: left;
+}
+
+#hapus{
+    display: inline-block;
+    background-color: #ff4949;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+footer {
+    background-color: #0089f2;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    padding: 5px 0px;
+    position: relative;
+    float:inline-end;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+a{
+    color: #fff;
+}
+
+.konten{
+    background-color: #d0edff;
+    margin: 20px 30px 30px 30px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    position: relative;
+}
+
+

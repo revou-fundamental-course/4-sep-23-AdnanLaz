@@ -1,0 +1,117 @@
+<script>alert("Hi, Salam Kenal Aku Muhamad Adnan Lazuardi")</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nama+Font">
+    <script src="js/script.js"></script>
+    <title>Muhamad Adnan Lazuardi_RevoU_Software Enginer</title>
+</head>
+
+<body align="center">
+    <div class="konten">
+        <header>
+            <span id="unik1">Katik</span> <span id="unik2">Kalkulator Matematik</span>
+        </header>
+        <br><br>
+        <b>Welcome to Katik</b>
+        <p>Hai sobat, selamat datang di Katik</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar persegi</p>
+        <br><br>
+        <button id="tombol_keliling" onclick="sembunyiKeliling()">Tampilkan Hitungan Keliling</button>
+        <button id="tombol_luas" onclick="sembunyiLuas()">Tampilkan Hitungan Luas</button>
+        <br><br>
+        <div class="container">
+            <div id="elementyangdisembunyikankeliling" class="left" class="hidden">
+                <!-- Ini Untuk Perhitungan Keliling -->
+                <div class="subjudul">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <p>
+                <div class="gambar">
+                    <img src="https://cdn0-production-images-kly.akamaized.net/kwVB6mWrePUIgUoMofCsWGJPKho=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3409130/original/098589600_1616496130-persegi.jpg"
+                        width="300px" height="200px">
+                </div>
+                </p>
+                <div class="penjelasan">
+                    <p>Rumus Keliling Persegi yaitu :</p>
+                    <p>
+                    <h2>K = 4 x S</h2>
+                    </p>
+                    <p>Dimana : </p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </div>
+    
+                <hr>
+                <h2>Hitung Keliling Persegi</h2>
+                <form id="hitungK-form">
+                    <input type="number" id="sisiK" placeholder="Nilai Sisi" required>
+                    <br>
+                    <button type="button" onclick="hitungK()">Hitung</button>
+                </form>
+                <div class="penjelasan">
+                    <div id="elementyangdisembunyikanhitunganK" class="hidden">
+                        <p>K = 4 x S</p>
+                        <p>K = 4 x <span id="v_sisiK"></span></p>
+                        <p>K = <span id="hasilkeliling"></span></p>
+                        <button id="hapus" type="button" onclick="HapusK()">Hapus</button>
+                    </div>
+                </div>
+               
+    
+            </div>
+    
+            <div id="elementyangdisembunyikanluas" class="right" class="hidden">
+                <!-- Ini Untuk Perhitungan Luas -->
+                <div>
+                    <h2>Luas Persegi</h2>
+                </div>
+                <p>
+                <div class="gambar">
+                    <img src="https://cdn0-production-images-kly.akamaized.net/kwVB6mWrePUIgUoMofCsWGJPKho=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3409130/original/098589600_1616496130-persegi.jpg"
+                        width="300px" height="200px">
+                </div>
+                </p>
+                <div class="penjelasan">
+                    <p>Rumus Luas Persegi yaitu :</p>
+                    <p>
+                    <h2>L = S x S</h2>
+                    </p>
+                    <p>Dimana : </p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                </div>
+                <hr>
+                <div class="hasilh">
+                    <p></p>
+                </div>
+                <h2>Hitung Luas Persegi</h2>
+                <form id="hitungL-form">
+                    <input type="number" id="sisiL" placeholder="Nilai Sisi" required>
+                    <br>
+                    <button type="button" onclick="hitungL()">Hitung</button>
+                </form>
+                <div class="penjelasan">
+                    <div id="elementyangdisembunyikanhitunganL" class="hidden">
+                        <p>L = S x S</p>
+                        <p>L = <span id="v_sisiL1"></span> x <span id="v_sisiL2"></span></p>
+                        <p>L = <span id="hasilLuas"></span></p>
+                        <button id="hapus" type="button" onclick="HapusL()">Hapus</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <footer>
+            <p>Muhamad Adnan Lazuardi</p>
+            <p>Email : <a class="email-link" href="mailto:madnanlazuardi2401@gmail.com">madnanlazuardi2401@gmail.com</a></p>
+        </footer>
+    </div>
+    
+    
+</body>
+
+</html>
